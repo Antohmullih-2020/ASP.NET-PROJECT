@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC_SETUP.Models;
+using MVC_SETUP.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +10,26 @@ namespace MVC_SETUP.Controllers
 {
     public class BookController : Controller
     {
-        public string GetAllBooks()
+       //initializing our repository to get data and send it to
+        private readonly BookRepository _bookRepository= null;
+            //constructor
+            public BookController()
         {
-            return "All Books";
+            _bookRepository = new BookRepository();
+        }
+        //controllores are used for methods to present them to browsers
+        public List<Bookmodel> GetAllBooks()
+        {
+            return _bookRepository.GetAllBooks();
         }
 
-        public string GetBook(int id)
+        public Bookmodel GetBook(int id)
         {
-            return $"Book with id ={id}";
+            return _bookRepository.GetBookBy(id);
         }
-        public string searchbook (string bookname, string authorname)
+        public List<Bookmodel> searchbook (string bookname, string authorname)
         {
-            return $"Book with Name ={bookname} &  Author= {authorname}";
+            return _bookRepository.searchbook(bookname, authorname);
         }
     }
 }

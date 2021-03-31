@@ -5,4 +5,8 @@
     <RootNamespace>MVC_SETUP</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
