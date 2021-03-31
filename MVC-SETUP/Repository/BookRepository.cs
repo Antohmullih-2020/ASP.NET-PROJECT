@@ -9,6 +9,7 @@ namespace MVC_SETUP.Repository
 {
     public class BookRepository
     {
+        //using our bookmodel in models foldert for data 
         public List<Bookmodel> GetAllBooks()
         {
             return DatabaseSource();

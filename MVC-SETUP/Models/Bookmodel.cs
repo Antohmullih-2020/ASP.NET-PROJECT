@@ -7,5 +7,8 @@ namespace MVC_SETUP.Models
 {
     public class Bookmodel
     {
+        public int Id { get; set; }
+        public string TiTle { get; set; }
+        public string  Author { get; set; }
     }
 }

@@ -8,9 +8,14 @@ namespace MVC_SETUP.Controllers
 {
     public class HomeController : Controller
     {
-        public string index()
+        public ViewResult index()
         {
-            return "Hello There!";
+            return View();
+        }
+
+        public ViewResult About_us()
+        {
+            return View();
         }
     }
 }

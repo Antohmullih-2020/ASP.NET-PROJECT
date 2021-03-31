@@ -18,9 +18,10 @@ namespace MVC_SETUP.Controllers
             _bookRepository = new BookRepository();
         }
         //controllores are used for methods to present them to browsers
-        public List<Bookmodel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return _bookRepository.GetAllBooks();
+            var data =_bookRepository.GetAllBooks();
+            return View();
         }
 
         public Bookmodel GetBook(int id)
