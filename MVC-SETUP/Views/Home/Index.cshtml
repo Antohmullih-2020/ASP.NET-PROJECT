@@ -15,15 +15,51 @@
     <p> @DateTime.Now</p>
     <p> Sum=@(10+18)</p>
 
-    @{ 
+    @{
         int a = 67;
         int b = 87;
         int c = a + b;
     }
-<h1>@c</h1>
-<h3>Email-antohmulli@outlook.com</h3>
-    //escape sequence we use @@ to display our accounts
+    <h1>@c</h1>
+    <h3>Email-antohmulli@outlook.com</h3>
+    @*escape sequence we use @@ to display our accounts*@
 
-<h2>Twitter-@@santozpalmer</h2>
+    <h2>Twitter-@@santozpalmer</h2>
+    @{
+        int k = 29;
+    }
+    @if (k <= 10)
+    {
+        <h1>Hello my name is (IF statement)</h1>
+    }
+    else
+    {
+        <h1>My name is (Else statement)</h1>
+    }
+
+    @*tenary operator*@
+    @{
+       int m = 30;
+       int u = 0;
+    }
+
+    <h1>Tenary-@(m==30? u=20 : u=7)</h1> 
+    <h1>Tenary-u =@u</h1>
+
+    @{ 
+        int w = 10;
+    }
+    
+    @switch (w)
+    {
+        case 1:<h1>I am 1</h1>
+            break;
+        case 2:<h1>I am 2</h1>
+            break;
+        case 3:<h1>I am 3</h1>
+            break;
+        default:<h1>I am default</h1>
+            break;
+    }
 </body>
 </html>
