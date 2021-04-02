@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,6 +31,18 @@ namespace MVC_SETUP
                 app.UseDeveloperExceptionPage();
             }
 
+            //to use static files we declare as shown bellow.that is css,js and images
+            //whenusing wwwroot
+            app.UseStaticFiles();
+
+            //Usestatic files in our own folder rather than wwwroot we use as shown bellow
+            app.UseStaticFiles(new StaticFileOptions { 
+            FileProvider =new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"foldername or path name")),
+            RequestPath ="/foldername"
+            
+            });
+
+            // how to enable our router
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
