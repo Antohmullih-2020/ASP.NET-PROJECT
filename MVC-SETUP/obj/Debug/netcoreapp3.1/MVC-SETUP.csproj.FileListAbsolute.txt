@@ -105,3 +105,4 @@ C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\MVC-SETU
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\Home\About_us.cshtml.g.cs
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\Book\GetAllBooks.cshtml.g.cs
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\shared\Contact_us.cshtml.g.cs
+C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\bin\Debug\netcoreapp3.1\libman.json

@@ -35,12 +35,6 @@ namespace MVC_SETUP
             //whenusing wwwroot
             app.UseStaticFiles();
 
-            //Usestatic files in our own folder rather than wwwroot we use as shown bellow
-            app.UseStaticFiles(new StaticFileOptions { 
-            FileProvider =new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"foldername or path name")),
-            RequestPath ="/foldername"
-            
-            });
 
             // how to enable our router
             app.UseRouting();
