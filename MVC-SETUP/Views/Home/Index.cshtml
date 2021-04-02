@@ -13,7 +13,7 @@
 <body>
     <h1>Welcome to my App</h1>
     <p> @DateTime.Now</p>
-    <p> Sum=@(10+18)</p>
+    <p> Sum=@(10 + 18)</p>
 
     @{
         int a = 67;
@@ -39,17 +39,17 @@
 
     @*tenary operator*@
     @{
-       int m = 30;
-       int u = 0;
+        int m = 30;
+        int u = 0;
     }
 
-    <h1>Tenary-@(m==30? u=20 : u=7)</h1> 
+    <h1>Tenary-@(m == 30 ? u = 20 : u = 7)</h1>
     <h1>Tenary-u =@u</h1>
 
-    @{ 
+    @{
         int w = 10;
     }
-    
+
     @switch (w)
     {
         case 1:<h1>I am 1</h1>
@@ -61,9 +61,21 @@
         default:<h1>I am default</h1>
             break;
     }
-    @for (int i = 0; i <10; i++) 
+    @*how to use forloop*@
+    @for (int i = 0; i < 10; i++)
     {
-    <h1>I am For Loop function</h1>
-   }
+        <h1>I am For Loop function</h1>
+    }
+
+    @*how to use foreach loop*@
+    @{
+            var list = new List<int>() { 1, 2, 3, 4, 5, 6 };
+    }
+
+    @foreach (var item in list)
+    {
+        <h1>@list</h1>
+    }
+
 </body> 
 </html>
