@@ -21,6 +21,10 @@ namespace MVC_SETUP
             //how to add mvc
             //for this scenario we are goin to use conroller and views
             services.AddControllersWithViews();
+            //helps to developer to make changes while browser is open
+#if DEBUG
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+#endif
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
