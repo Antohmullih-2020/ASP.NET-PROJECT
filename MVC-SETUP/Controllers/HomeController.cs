@@ -12,21 +12,21 @@ namespace MVC_SETUP.Controllers
         //returning a mode that as same name for method action and file name
         public ViewResult index()
         {
-            var student = new { id = 1, Name = "Antony" };
-            return View(student);
+            return View();
         }
 
         //returning a model using view
         //Action method with different name with file name
         public ViewResult About_us()
         {
-            var student = new { id = 1, name = "Antony" };
-            return View("Index", student);
+            return View();
         }
 
         public ViewResult Contact_us()
         {
             return View();
         }
+
+      
     }
 }

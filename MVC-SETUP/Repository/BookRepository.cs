@@ -29,9 +29,12 @@ namespace MVC_SETUP.Repository
         {
             return new List<Bookmodel>()
             {
-                new Bookmodel(){Id=1, TiTle="MVC", Author="Kiptoo"},
-                 new Bookmodel(){Id=2, TiTle="Java", Author="Ann"},
-                  new Bookmodel(){Id=3, TiTle="c#", Author="Microsoft"}
+                new Bookmodel(){Id=1, TiTle="MVC", Author="Net.Core", Description ="Here we talk all about Mvc"},
+                new Bookmodel(){Id=2, TiTle="Java", Author="Java & Microsoft", Description ="Here we talk all about Java"},
+                new Bookmodel(){Id=3, TiTle="C#", Author="Microsoft", Description ="Here we talk all about C#"},
+                new Bookmodel(){Id=4, TiTle="Javascript", Author="Microsoft",Description ="Here we talk all about Javascript"},
+                new Bookmodel(){Id=5, TiTle="Bootstrap", Author="Bootstrap", Description ="Here we talk all about Bootstrap"},
+                new Bookmodel(){Id=6, TiTle="PHP", Author="Microsoft", Description ="Here we talk all about PHP"}
             };
         }
     }

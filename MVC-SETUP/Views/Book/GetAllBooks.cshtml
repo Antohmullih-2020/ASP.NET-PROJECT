@@ -1,22 +1,26 @@
-﻿
+﻿@model IEnumerable<MVC_SETUP.Models.Bookmodel>
 @{
-    Layout = null;
+    Layout ="_Layout";
 }
 
-<!DOCTYPE html>
+<div class="container">
+    <h1 class="display-4">All Books</h1>
+    <div class="row">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>GetAllBooks</title>
-</head>
-<body>
-    <h1 >Our Available Books</h1>
-    <button>See Books </button>
-    <p>MVC</p>
-    <p>CSharp</p>
-    <p>Java</p>
-    <p>JQuery</p>
+        @foreach (var book in Model)
+        {
+            <div class="card mb-3" style="max-width: 450px;">
+                <div class="row g-0">
 
-</body>
-</html>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@book.TiTle</h5>
+                            <p class="card-text">@book.Description</p>
+                            <p class="card-text"><small class="text-muted">@book.Author</small></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                }
+            </div>
+        </div>    

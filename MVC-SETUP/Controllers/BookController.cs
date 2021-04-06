@@ -21,7 +21,7 @@ namespace MVC_SETUP.Controllers
         public ViewResult GetAllBooks()
         {
             var data =_bookRepository.GetAllBooks();
-            return View();
+            return View(data);
         }
 
         public Bookmodel GetBook(int id)
