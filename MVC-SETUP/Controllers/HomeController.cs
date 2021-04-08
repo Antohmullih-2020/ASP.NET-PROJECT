@@ -12,6 +12,7 @@ namespace MVC_SETUP.Controllers
         //returning a mode that as same name for method action and file name
         public ViewResult index()
         {
+            ViewBag.Title=12345;
             return View();
         }
 

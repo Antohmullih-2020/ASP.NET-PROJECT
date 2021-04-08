@@ -394,3 +394,5 @@ C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\MVC-SETU
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\shared\_Layout.cshtml.g.cs
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact_us.cshtml.g.cs
 C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\Book\GetBook.cshtml.g.cs
+C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\maure\source\repos\MVC-SETUP\MVC-SETUP\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
