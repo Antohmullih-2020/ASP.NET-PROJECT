@@ -1,18 +1,16 @@
-﻿@{
-    var data = ViewBag.Data;
+﻿@{ 
+    var bookstory = ViewData["book"] as Bookmodel;
 }
 
 
-
-
 <div class="jumbotron text-center">
-    <h1>Welcom to Antony BookStore Application @ViewBag.Title</h1>
-    <p>Please Enjoy yourself
-   @data.id 
-    @data.name
-    
-    
-    </p>
+    <h1>Welcom to Antony BookStore Application @ViewData["property1"]</h1>
+    <p>
+        Please Enjoy yourself
+    </p><br />
+    <p>Id= @bookstory.Id</p>
+    <p>Author= @bookstory.Author</p>
+
 </div>
 
 <div class="container">
