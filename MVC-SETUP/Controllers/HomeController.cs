@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Dynamic;
 
 namespace MVC_SETUP.Controllers
 {
@@ -12,7 +13,12 @@ namespace MVC_SETUP.Controllers
         //returning a mode that as same name for method action and file name
         public ViewResult index()
         {
-            ViewBag.Title=12345;
+            
+            ViewBag.Title ="Santozpalmer web";
+            dynamic data = new ExpandoObject();
+            data.id = 123;
+            data.name = "Palmer";
+            ViewBag.Data = data;
             return View();
         }
 

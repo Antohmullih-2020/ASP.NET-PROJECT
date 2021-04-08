@@ -1,11 +1,18 @@
-﻿
+﻿@{
+    var data = ViewBag.Data;
+}
 
 
 
 
 <div class="jumbotron text-center">
     <h1>Welcom to Antony BookStore Application @ViewBag.Title</h1>
-    <p>Please Enjoy yourself</p>
+    <p>Please Enjoy yourself
+   @data.id 
+    @data.name
+    
+    
+    </p>
 </div>
 
 <div class="container">
