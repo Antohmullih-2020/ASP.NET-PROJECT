@@ -23,10 +23,11 @@ namespace MVC_SETUP.Controllers
             var data =_bookRepository.GetAllBooks();
             return View(data);
         }
-
-        public Bookmodel GetBook(int id)
+        public ViewResult GetBook(int id)
         {
-            return _bookRepository.GetBookBy(id);
+            var data = _bookRepository.GetBookBy(id);
+
+            return View(data);
         }
         public List<Bookmodel> searchbook (string bookname, string authorname)
         {
