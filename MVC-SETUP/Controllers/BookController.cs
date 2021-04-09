@@ -3,7 +3,6 @@ using MVC_SETUP.Models;
 using MVC_SETUP.Repository;
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,12 +23,12 @@ namespace MVC_SETUP.Controllers
             var data =_bookRepository.GetAllBooks();
             return View(data);
         }
+        [Route("book-details/{id}")]
         public ViewResult GetBook(int id)
         {
-            dynamic data = new ExpandoObject();
-            data.book = _bookRepository.GetBookBy(id);
-            data.Name = "Kiptoo";
-           // var data = 
+
+            var data = _bookRepository.GetBookBy(id);
+
             return View(data);
         }
         public List<Bookmodel> searchbook (string bookname, string authorname)
