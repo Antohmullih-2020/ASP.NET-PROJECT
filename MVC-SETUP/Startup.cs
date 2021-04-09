@@ -45,7 +45,10 @@ namespace MVC_SETUP
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();// MapDefaultControllerRoute used to call homecontroller class
+                 endpoints.MapDefaultControllerRoute();// MapDefaultControllerRoute used to call homecontroller class
+                //endpoints.MapControllerRoute(
+                //    name: "Default",
+                //    pattern: "bookApp/{controller=Home}/{action=index}/{id}");
             });
         }
     }

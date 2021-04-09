@@ -14,9 +14,7 @@ namespace MVC_SETUP.Controllers
         //returning a mode that as same name for method action and file name
         public ViewResult index()
         {
-            ViewData["property1"] = "Santos";
-            ViewData["book"] = new Bookmodel() { Author = "kiptoo", Id = 1 };
- 
+           
             return View();
         }
          
