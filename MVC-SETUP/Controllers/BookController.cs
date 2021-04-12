@@ -23,7 +23,7 @@ namespace MVC_SETUP.Controllers
             var data =_bookRepository.GetAllBooks();
             return View(data);
         }
-        [Route("book-details/{id}")]
+       
         public ViewResult GetBook(int id)
         {
 
@@ -34,6 +34,16 @@ namespace MVC_SETUP.Controllers
         public List<Bookmodel> searchbook (string bookname, string authorname)
         {
             return _bookRepository.searchbook(bookname, authorname);
+        }
+        public ViewResult AddnewBook()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult AddnewBook(Bookmodel bookmodel)
+        {
+            return View();
         }
     }
 }
